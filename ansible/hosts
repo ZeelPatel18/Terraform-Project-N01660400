@@ -1,26 +1,19 @@
-[localhost]
-; localhost
-
 [linux]
 vm-c-n01660400-1.eastus.cloudapp.azure.com
 vm-c-n01660400-2.eastus.cloudapp.azure.com
 vm-c-n01660400-3.eastus.cloudapp.azure.com
 
 [windows]
-; vm-w-n01660400-1.eastus.cloudapp.azure.com
 
 [os:children]
 linux
 windows
 
 [linux:vars]
-ansible_user=japan
-
-[localhost:vars]
-ansible_password=admin123
+ansible_user=Japan
 
 [windows:vars]
-ansible_user=japan
+ansible_user=Japan
 ansible_password="admin123"
 ansible_connection=winrm
 ansible_port=5985
